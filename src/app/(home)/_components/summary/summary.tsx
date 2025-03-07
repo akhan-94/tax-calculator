@@ -1,16 +1,12 @@
-import { z } from "zod";
-import { OptionsFormSchema } from "../../_constants/options-form-schema";
 import { Breakdown } from "./components/breakdown";
 import { TaxChart } from "./components/tax-chart";
 
 export function Summary({
-  options,
   federalDeductionAmount,
   provincialDeductionAmount,
   totalTax,
   netPay,
 }: {
-  options: z.infer<typeof OptionsFormSchema> | undefined;
   federalDeductionAmount: number;
   provincialDeductionAmount: number;
   totalTax: number;
