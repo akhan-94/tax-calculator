@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
-export function DebugCard({ data }: { data: any }) {
+export function DebugCard({ data }: { data: unknown }) {
   return (
     <Card>
       <CardHeader>

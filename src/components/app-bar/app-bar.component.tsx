@@ -1,10 +1,10 @@
 import { Separator } from "@/components/ui/separator";
-import { Logo } from "../logo";
-import { ThemeSwitcher } from "./components/theme-switcher";
-import { LanguageSwitcher } from "./components/language-switcher";
-import { Button } from "../ui/button";
-import { GithubIcon, Sun } from "lucide-react";
+import { GithubIcon } from "lucide-react";
 import Link from "next/link";
+import { Logo } from "../logo";
+import { Button } from "../ui/button";
+import { LanguageSwitcher } from "./components/language-switcher";
+import { ThemeSwitcher } from "./components/theme-switcher";
 
 export function AppBar() {
   return (

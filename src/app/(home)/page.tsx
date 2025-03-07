@@ -46,12 +46,12 @@ export default function Home() {
   const totalTax = React.useMemo(() => {
     if (!options) return 0;
     return federalTaxDeductions.total + provincialTaxDeductions.total;
-  }, [federalTaxDeductions, provincialTaxDeductions]);
+  }, [federalTaxDeductions, provincialTaxDeductions, options]);
 
   const netPay = React.useMemo(() => {
     if (!options) return 0;
     return options.income - totalTax;
-  }, [options?.income, totalTax]);
+  }, [options, totalTax]);
 
   const debugData = {
     // federalTaxDeductions,

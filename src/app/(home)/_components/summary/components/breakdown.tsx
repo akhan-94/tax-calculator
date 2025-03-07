@@ -23,7 +23,7 @@ export function Breakdown({
       { label: "CPP deduction", value: 0 },
       { label: "EL deduction", value: 0 },
     ];
-  }, [federalDeductionAmount]);
+  }, [federalDeductionAmount, provincialDeductionAmount]);
 
   return (
     <Card>
