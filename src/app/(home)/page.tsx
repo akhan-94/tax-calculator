@@ -91,12 +91,10 @@ export default function Home() {
             <div className="space-y-4">
               <TaxBracketBreakdownTable
                 title="Federal"
-                year={options.year}
                 data={federalTaxDeductions}
               />
               <TaxBracketBreakdownTable
                 title="Provincial"
-                year={options.year}
                 data={provincialTaxDeductions}
               />
             </div>

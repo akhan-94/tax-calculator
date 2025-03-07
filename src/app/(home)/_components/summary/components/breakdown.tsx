@@ -4,17 +4,13 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { SelectSeparator } from "@/components/ui/select";
 import { cn } from "@/lib/utils";
 import React from "react";
-import { z } from "zod";
-import { OptionsFormSchema } from "../../../_constants/options-form-schema";
 
 export function Breakdown({
-  options,
   federalDeductionAmount,
   provincialDeductionAmount,
   totalTax,
   netPay,
 }: {
-  options: z.infer<typeof OptionsFormSchema> | undefined;
   federalDeductionAmount: number;
   provincialDeductionAmount: number;
   totalTax: number;

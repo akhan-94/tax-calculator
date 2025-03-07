@@ -23,11 +23,9 @@ export type TaxBracketCalculationData = {
 };
 
 export function TaxBracketBreakdownTable({
-  year,
   title,
   data,
 }: {
-  year: number;
   title: string;
   data: TaxBracketCalculationData;
 }) {
@@ -87,11 +85,17 @@ function BracketTableRow({
     <TableRow>
       <TableCell>
         {first ? (
-          <>Up to <strong>{end}</strong></>
+          <>
+            Up to <strong>{end}</strong>
+          </>
         ) : last ? (
-          <>Over <strong>{start}</strong></>
+          <>
+            Over <strong>{start}</strong>
+          </>
         ) : (
-          <>From <strong>{start}</strong> to <strong>{end}</strong></>
+          <>
+            From <strong>{start}</strong> to <strong>{end}</strong>
+          </>
         )}
       </TableCell>
       <TableCell className="font-medium">{rate}</TableCell>
