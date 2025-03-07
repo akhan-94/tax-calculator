@@ -79,7 +79,6 @@ export default function Home() {
 
           <TabsContent value="summary">
             <Summary
-              options={options}
               federalDeductionAmount={federalTaxDeductions.total}
               provincialDeductionAmount={provincialTaxDeductions.total}
               totalTax={totalTax}
