@@ -19,7 +19,6 @@ export function Summary({
   return (
     <div className="grid grid-cols-2 gap-4">
       <Breakdown
-        options={options}
         federalDeductionAmount={federalDeductionAmount}
         provincialDeductionAmount={provincialDeductionAmount}
         totalTax={totalTax}
