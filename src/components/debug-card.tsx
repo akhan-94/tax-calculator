@@ -1,21 +1,19 @@
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 
-export function Results() {
+export function DebugCard({ data }: { data: any }) {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Results</CardTitle>
+        <CardTitle>Debug data</CardTitle>
       </CardHeader>
       <CardContent>
-        <p>Card Content</p>
+        <pre>{JSON.stringify(data, null, 2)}</pre>
       </CardContent>
     </Card>
   );
